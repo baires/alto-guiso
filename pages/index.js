@@ -15,7 +15,7 @@ export default class Index extends React.Component {
   render() {
     const { sell } = this.props;
     const RATIO = 3.4;
-    const GUISO_RATIO = RATIO * sell.split(",").join(".");
+    const GUISO_RATIO = (RATIO * sell.split(",").join(".")).toFixed();
     return (
       <>
         <HeadBasic />
