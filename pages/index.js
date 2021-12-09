@@ -2,32 +2,31 @@ import React from "react";
 import HeadBasic from "../head";
 import "isomorphic-unfetch";
 
-const GALICIA =
-  "https://www.bancogalicia.com/cotizacion/cotizar?currencyId=02&quoteType=SU&quoteId=999";
+const GALICIA = "https://api.bluelytics.com.ar/v2/latest";
 
 export default class Index extends React.Component {
   static async getInitialProps() {
     const res = await fetch(GALICIA);
     const json = await res.json();
-    return { sell: json.sell };
+    return { sell: json.blue.value_sell };
   }
 
   render() {
     const { sell } = this.props;
     const RATIO = 3.4;
-    const GUISO_RATIO = (RATIO * sell.split(",").join(".")).toFixed();
+    const GUISO_RATIO = Math.round(RATIO * sell).toFixed(0);
+
     return (
       <>
         <HeadBasic />
         <div className="container">
           <div>
             <p>
-              You will need <strong>${GUISO_RATIO}</strong> to buy an Alto Guiso
-              today
+              Necesitas <strong>${GUISO_RATIO}</strong> pata un Alto Guiso hoy en dia. today
             </p>
             <p>
               <small>
-                ({RATIO} * ${sell.split(",").join(".")} Bco. Galicia)
+                ({RATIO} * ${sell} dolar blue)
               </small>
             </p>
           </div>
