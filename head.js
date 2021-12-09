@@ -13,7 +13,7 @@ const HeadBasic = () => (
     />
     <meta
       property="og:url"
-      content="alto-guiso.now.sh/"
+      content="https://alto-guiso.now.sh/"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta charSet="utf-8" />
