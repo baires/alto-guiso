@@ -2,11 +2,11 @@ import React from "react";
 import HeadBasic from "../head";
 import "isomorphic-unfetch";
 
-const GALICIA = "https://api.bluelytics.com.ar/v2/latest";
-
+const BLUE = "https://api.bluelytics.com.ar/v2/latest";
+BLUE
 export default class Index extends React.Component {
   static async getInitialProps() {
-    const res = await fetch(GALICIA);
+    const res = await fetch(BLUE);
     const json = await res.json();
     return { sell: json.blue.value_sell };
   }
@@ -22,7 +22,7 @@ export default class Index extends React.Component {
         <div className="container">
           <div>
             <p>
-              Necesitas <strong>${GUISO_RATIO}</strong> pata un Alto Guiso hoy en dia. today
+              Hoy necesitas <strong>${GUISO_RATIO}</strong> para un Alto Guiso
             </p>
             <p>
               <small>

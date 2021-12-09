@@ -13,7 +13,7 @@ const HeadBasic = () => (
     />
     <meta
       property="og:url"
-      content="https://alto-guiso.now.sh/"
+      content="https://alto-guiso-alpha.vercel.app/"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta charSet="utf-8" />
