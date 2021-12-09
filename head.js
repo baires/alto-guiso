@@ -5,7 +5,7 @@ const HeadBasic = () => (
     <title>Alto Guiso Index</title>
     <meta
       property="og:description"
-      content="The The Alto Guiso Index aka AGI"
+      content="Alto Guiso Index aka AGI"
     />
     <meta
       property="og:image"
@@ -13,7 +13,7 @@ const HeadBasic = () => (
     />
     <meta
       property="og:url"
-      content="http://euro-travel-example.com/index.htm"
+      content="alto-guiso.now.sh/"
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta charSet="utf-8" />
