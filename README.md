@@ -8,15 +8,8 @@ Based on [this tweet](https://twitter.com/NicolasFioren/status/11215057121008394
 Install it and run:
 
 ```
-npm install
-npm run dev
-# or
-yarn
-yarn dev
+open index.html
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
-
-```
-now
-```
+Deployments run on [Vercel](https://vercel.com/) from the Git repository as a
+static site.
